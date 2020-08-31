@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { CircleToBlockLoading } from 'react-loadingg';
+import LoadingScreen from 'react-loading-screen';
+import Logo from './Images/logo.png';
+import NavBar from './components/NavBar';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ //...
+<LoadingScreen
+loading={CircleToBlockLoading}
+bgColor='blue'
+spinnerColor='#9ee5f8'
+textColor='#676767'
+logoSrc={Logo}
+text=''
+> 
+
+// ...
+// here loadable content
+// for example, async data
+  //<div></div>
+</LoadingScreen>
   );
 }
 
