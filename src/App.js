@@ -3,8 +3,6 @@ import './App.css';
 import { CircleToBlockLoading } from 'react-loadingg';
 import LoadingScreen from 'react-loading-screen';
 import Logo from './Images/logo.png';
-import NavBar from './components/NavBar';
-
 
 
 function App() {
